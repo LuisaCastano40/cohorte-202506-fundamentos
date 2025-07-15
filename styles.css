@@ -1,0 +1,50 @@
+/*  ESTO ES UN COMENTARIO EN CSS*/
+/* 
+ASCII PARA {}
+ALT + 123
+*/
+
+/* CSS -> Hoja de estilos en cascada */
+/* ESPECIFICIDAD */
+
+/* Regla de estilo */
+/*
+    SELECTORES:
+    1. Etiquetas -> menos específicas
+    2. Clases -> especificidad media -> .clase
+    3. Identificador único ->  especificidad más alta -> #id
+
+*/
+
+
+body {
+    /* color de fondo */
+    background-color: rgb(46, 163, 226)
+}
+
+h1 {
+    /* alinear texto */
+    text-align: center;
+    /* color del texto */
+    color: brown;
+}
+
+p {
+    background-color: chocolate;
+}
+
+.parrafo-1 {
+    background-color: whitesmoke;
+    /* tamaño de letra */
+    font-size: 20px;
+
+}
+
+.parrafoLargo {
+    background-color: lightpink;
+}
+
+/* id -> se utilicen en js -> asociaciones entre elemntos */
+#titulo {
+    font-size: 30px;
+}
