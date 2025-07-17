@@ -1,0 +1,67 @@
+/* CSS CON BUENAS PRÁCTICAS */
+/* Establecer condiciones iniciales */
+/* 1. importaciónes - de tipografía */
+/* 2. definir las variables que va a utilizar
+    paleta de colores
+*/
+
+@import url('https://fonts.cdnfonts.com/css/zilla-slab');
+
+:root {
+    --color-fondo: #F6F7F4;
+    --color-texto: #2E3952;
+    --color-enfasis: #7185BE;
+    --color-enfasis2: #CCD6ED;
+    --tamaño-titulos: 30px;
+}
+
+*{
+    /* margen externa */
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* Esos estilos que se apliquen a todo */
+    font-family: 'Zilla Slab', sans-serif;
+    background-color:var(--color-fondo) ;
+    color: var(--color-texto);
+    /* Quitar scroll */
+    overflow-x: hidden;
+}
+
+/* -------------------------HEADER ------------------------ */
+header {
+    /* ancho */
+    width: 100vw ; /* vw -> viewport width*/
+    /* altura */
+    height: 10vh;   /* vh -> viewport height*/
+    background-color: var(--color-enfasis);
+}
+
+nav {
+    /* como se muestran los elementos */
+    display: flex;
+    /* alinear los elemntos dentro de un contenedor */
+    justify-content: center; /*centrar en x*/
+    align-items: center; /* centrar y*/
+    gap: 50px; /* definir espacios entre elementos*/
+}
+
+.lista {
+    display: flex;
+    gap: 30px;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+}
+
+/* -----------------------MAIN----------------------------- */
+
+
+
+
+
+/* ----------------------FOOTER---------------------------- */
