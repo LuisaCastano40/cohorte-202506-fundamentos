@@ -18,7 +18,6 @@
 *{
     /* margen externa */
     margin: 0;
-    box-sizing: border-box;
 }
 
 body {
@@ -33,12 +32,12 @@ body {
 /* -------------------------HEADER ------------------------ */
 header {
     /* ancho */
-    width: 96.5vw ; /* vw -> viewport width*/
+    width: 97vw ; /* vw -> viewport width*/
     /* altura */
     height: 10vh;   /* vh -> viewport height*/
     background-color: var(--color-enfasis);
-    margin: 15px; /*margen exterior*/
-    border-radius: 15px;  /* borde curvo*/
+    margin: 10px;
+    border-radius: 20px;
 }
 
 nav {
@@ -53,7 +52,7 @@ nav {
 .lista {
     display: flex;
     gap: 30px;
-    list-style: none; /* propiedad de los ul ol*/
+    list-style: none;
 }
 
 .logo {
@@ -62,40 +61,53 @@ nav {
 }
 
 a {
+    text-decoration: none;
     color: var(--color-fondo);
-    text-decoration:none;
+}
+
+a:hover {
+    color: var(--color-enfasis2);
 }
 
 
 /* -----------------------MAIN----------------------------- */
-
-main {
+ main {
     width: 80vw;
-    margin: auto;
-    margin-top: 50px;
+    margin: 50px auto;
     display: flex;
     flex-direction: column;
-    gap: 30px;
-}
+    gap: 20px;
+ }
 
-h1, h2 {
-    /* alineacion del texto */
-    text-align: center;
-}
-
-.contenedor {
-    background-color: var(--color-enfasis2);
-    border-radius: 15px;
+ .contenedor {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 30px;  /* margen interno*/
-    gap: 20px;
-}
+    background-color: var(--color-enfasis2);
+    border-radius: 20px;
+ }
 
-.semantica {
+ main img {
     width: 50%;
-    border-radius: 15px;
-}
+ }
+
+ h1, h2 {
+    text-align: center;
+    margin: 10px;
+ }
+
+ table {
+    border-collapse: collapse;
+    margin: auto;
+ }
+ th, td {
+    border: solid var(--color-enfasis);
+ }
+
+ thead {
+    background-color: #7185BE;
+    color: var(--color-fondo);
+ }
+
 /* ----------------------FOOTER---------------------------- */
